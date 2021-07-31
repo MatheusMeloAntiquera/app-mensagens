@@ -1,0 +1,13 @@
+{
+  "name": "api-mensagens",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon --legacy-watch ./index.js"
+  },
+  "author": "Matheus Melo",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

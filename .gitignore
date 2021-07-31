@@ -1,0 +1,7 @@
+# Ignora o volume do mongodb
+mongodb/data/*
+# Exceto o arquivo de .gitkeep
+!mongodb/data/.gitkeep
+
+# Ignora node_modules da api
+api/node_modules
