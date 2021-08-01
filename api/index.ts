@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 
-import { rotas } from "@src/routes/rotas";
+import Routes from "@src/routes/Routes";
 
 const app = express();
 const porta = process.env.PORTA;
@@ -9,7 +9,7 @@ const porta = process.env.PORTA;
 app.use(cors());
 app.use(express.json());
 
-app.use(rotas);
+app.use(new Routes().getRoutes());
 
 app.listen(porta, () => {
   console.log(`Escutando a porta ${porta}`);

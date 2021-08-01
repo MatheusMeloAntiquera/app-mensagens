@@ -1,4 +1,4 @@
-import { Mensagem } from "@src/models/mensagem.model";
+import { Mensagem } from "@src/models/Mensagem";
 import { Repository, EntityRepository } from "typeorm";
 
 @EntityRepository(Mensagem)
