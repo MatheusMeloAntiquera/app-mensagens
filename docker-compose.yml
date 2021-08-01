@@ -51,4 +51,4 @@ services:
 networks:
   app-mensagens-network:
     driver: "bridge"
-    name: triare-network
+    name: app-mensagens-network
