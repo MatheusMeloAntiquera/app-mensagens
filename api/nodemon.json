@@ -1,0 +1,10 @@
+ {
+     "ignore": [
+         "src/**/*.spec.ts*",
+         "node_modules/*"
+     ],
+     "ext": ".ts,.json,.env",
+     "legacyWatch": true,
+     "verbose": true,
+     "exec": "ts-node"
+ }
