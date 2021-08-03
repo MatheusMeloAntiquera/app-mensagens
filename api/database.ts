@@ -1,8 +1,11 @@
-import { createConnection } from "typeorm";
+import { createConnection, Connection } from "typeorm";
 
 class Database {
-  public async conectar() {
-    await createConnection();
+  /**
+   * Conecta
+   */
+  public async conectar(): Promise<Connection> {
+    return createConnection();
   }
 }
 

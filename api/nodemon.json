@@ -1,10 +1,9 @@
  {
-     "ignore": [
+    "ignore": [
          "src/**/*.spec.ts*",
-         "node_modules/*"
+         "node_modules",
+         "./nodemon.json"
      ],
-     "ext": ".ts,.json,.env",
-     "legacyWatch": true,
-     "verbose": true,
-     "exec": "ts-node"
+     "ext": "ts,json,env",
+     "exec": "ts-node-dev --debug --respawn --transpile-only --exit-child --ignore-watch node_modules -r tsconfig-paths/register -- ./index.ts"
  }

@@ -5,10 +5,8 @@ import cors from "cors";
 import Routes from "@src/routes/Routes";
 import Database from "./database";
 
-console.log('aqui')
-Database.conectar().then((conexao) => {
-  console.log("Conexão com banco realizada");
-
+Database.conectar().then((_conexao) => {
+  console.debug("Conexão com banco realizada");
   const app = express();
   const porta = process.env.PORTA;
 
